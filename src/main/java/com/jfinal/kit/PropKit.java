@@ -23,6 +23,13 @@ import com.jfinal.core.Const;
 /**
  * PropKit. PropKit can load properties file from CLASSPATH or File object.
  */
+
+/**
+ * PropKit工具类用来读取外部键值对配置文件，PropKit可以极度方便地在系统任意时空使用
+ * PropKit可同时加载多个配置文件，第一个被加载的配置文件可以使用PorpKit.get(…)方法直接操作，非第一个被加载的配置文件则需要使用PropKit.use(…).get(…)来操作。
+ *
+ *     PropKit 的使用并不限于在 YourJFinalConfig 中，可以在项目的任何地方使用。此外PropKit.use(…)方法在加载配置文件内容以后会将数据缓存在内存之中，可以通过PropKit.useless(…)将缓存的内容进行清除
+ */
 public class PropKit {
 	
 	private static Prop prop = null;
