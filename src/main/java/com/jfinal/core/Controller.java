@@ -45,6 +45,10 @@ import com.jfinal.upload.UploadFile;
  * 衣带渐宽终不悔，为伊消得人憔悴。<br>
  * 众里寻她千百度，蓦然回首，那人却在灯火阑珊处。
  */
+
+/**
+ * 在 Controller 之中定义的 public 方法称为Action。Action 是请求的最小单位。Action 方法必须在 Controller 中定义，且必须是 public 可见性
+ */
 @SuppressWarnings({"unchecked", "rawtypes"})
 public abstract class Controller {
 	
